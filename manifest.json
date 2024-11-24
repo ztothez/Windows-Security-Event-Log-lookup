@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "Windows Event Lookup",
+  "description": "Lookup Windows Event IDs on Ultimate Windows Security",
+  "version": "1.7",
+  "icons": {
+    "48": "icon48.png"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "contextMenus"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon48.png",
+    "default_title": "Lookup Windows Event"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{92128d6d-3abf-4da4-a5ce-59664aec9ed4}",
+      "strict_min_version": "79.0"
+    }
+  }
+}
