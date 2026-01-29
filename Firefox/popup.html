@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Windows Event Lookup</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --focus: #2563eb;
+      --danger: #b91c1c;
+      --btn: #111827;
+      --btnText: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      padding: 12px;
+      width: 260px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 13px;
+      line-height: 1.3;
+    }
+
+    h1 {
+      margin: 0 0 8px 0;
+      font-size: 14px;
+      font-weight: 650;
+    }
+
+    .hint {
+      margin: 0 0 10px 0;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .row {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    input[type="text"] {
+      flex: 1;
+      padding: 8px 10px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      outline: none;
+      font-size: 13px;
+    }
+
+    input[type="text"]:focus {
+      border-color: var(--focus);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+    }
+
+    button {
+      padding: 8px 10px;
+      border: 0;
+      border-radius: 10px;
+      background: var(--btn);
+      color: var(--btnText);
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    button:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .error {
+      margin-top: 8px;
+      color: var(--danger);
+      font-size: 12px;
+      min-height: 16px;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid var(--border);
+      font-size: 12px;
+    }
+
+    a {
+      color: var(--focus);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Windows Event Lookup</h1>
+  <p class="hint">Enter a Windows Event ID (e.g., <b>4624</b>)</p>
+
+  <div class="row">
+    <input id="eventId" type="text" inputmode="numeric" autocomplete="off" placeholder="4624" aria-label="Event ID" />
+    <button id="lookupButton" type="button">Lookup</button>
+  </div>
+
+  <div id="error" class="error" role="status" aria-live="polite"></div>
+
+  <div class="footer">
+    <a id="openEncyclopedia" href="#" title="Open the main event encyclopedia">Encyclopedia</a>
+    <span class="hint" style="margin:0;">UltimateWindowsSecurity</span>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
