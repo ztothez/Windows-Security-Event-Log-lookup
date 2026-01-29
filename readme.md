@@ -1,67 +1,41 @@
 # Windows Security Event ID Lookup Extension
 
-Quickly look up Windows Security Event IDs for detailed information with this lightweight browser extension. Designed for system administrators and security analysts, this tool provides fast access to documentation and insights about Windows Event IDs, streamlining the process of investigating security events.
+Windows Security Event ID Lookup is an open-source browser extension for quickly looking up Windows Security Event IDs and accessing trusted documentation. It is intended for system administrators, SOC analysts, and security engineers investigating Windows audit logs.
 
----
+## Features
+- **Right-click lookup**  
+    Highlight a Windows Security Event ID (for example, `4624` or `4688`) and look it up directly from the context menu.
+    
+- **Popup lookup**  
+    Enter Event IDs manually using the extension toolbar popup.
+    
+- **Authoritative documentation**  
+    Redirects to Ultimate Windows Security and other trusted reference sources.
 
-## 🛠 Features
+## Usage
 
-- **Right-Click Integration**: Select any Event ID on a webpage, right-click, and choose **"Lookup Event ID"** to access relevant documentation.
-- **Direct Access to Documentation**: Quickly links to official documentation or trusted resources for detailed information about the selected Event ID.
-- **Browser-Based Workflow**: Operates entirely within your browser, providing fast lookups without storing or analyzing logs.
+### Right-click lookup
+1. Highlight a Windows Security Event ID.
+2. Right-click and select **Lookup Windows Event ID**.
 
----
+### Popup lookup
 
-## 🚀 How to Use
+1. Click the extension icon.
+2. Enter a Windows Security Event ID.
+3. Press Enter or select **Lookup**.
 
-1. **Install the Extension**: Add the Windows Security Event ID Lookup extension to your browser.
-2. **Perform a Lookup**:
-   - Highlight any Event ID on a webpage (e.g., `4625`, `4776`).
-   - Right-click on the selection.
-   - Choose **"Lookup Event ID"** from the context menu.
-3. **View Results**: The extension will open a new tab with relevant documentation or insights about the selected Event ID.
+## Permissions
+- **Context menus** – required to enable right-click lookups
+- **Tabs** – required to open documentation pages
 
----
+## Installation
+- **Firefox Add-ons**  
+    [https://addons.mozilla.org/firefox/addon/win-event-lookup/](https://addons.mozilla.org/firefox/addon/win-event-lookup/)
 
-## 📝 Developer Comments
+- **Chrome Web Store:**  
+    [https://chromewebstore.google.com/detail/abuseipdb-check/](https://chromewebstore.google.com/detail/abuseipdb-check/enifjhjkmfpdncfbdhojpjiiiimbmjbc?authuser=0&hl=en)    
 
-- **No Information Found**: If an Event ID returns no results, it may not be documented on the accessed site. In such cases, users can try alternative resources like Microsoft's official documentation.
-- **Read-Only Extension**: This extension does not store or analyze logs; it simply redirects the user to existing documentation for the selected Event ID.
-
----
-
-## ⚙️ Best Practices for Usage
-
-- **Optimize Browser Performance**: 
-  - Disable the extension when not in use to reduce system memory usage and improve browser performance.
-  - Enable the extension only when performing lookups or accessing specific information.
-- **Verify Event Information**: Always cross-reference event details with official resources to ensure accuracy.
-
----
-
-## 🌐 Permissions
-
-This extension requires minimal permissions to function:
-- **Access to Context Menus**: To add the "Lookup Event ID" option to the right-click menu.
-- **Access to Open Tabs**: To display the results in a new tab.
-
----
-
-## 🔧 Installation Instructions
-
-1. You can install the extension directly for Firefox here:  
-   👉 [Windows Security Event ID Lookup on Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/win-event-lookup/)
-
-2. Once installed, the extension will automatically add the **"Lookup Event ID"** option to your right-click context menu.
-
----
-
-## 🔗 Links
-
-- [Windows Security Event Log Documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-logs)
-- [Ultimate Windows Security](https://www.ultimatewindowssecurity.com)
-- [Windows Security Event ID Lookup on Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/win-event-lookup/)
-
----
-
-### Made with ❤️ by [ZtotheZ](https://github.com/ztothez)
+## Open Source & License
+This project is licensed under the MIT License.
+Source code:
+[https://github.com/ztothez/Windows-Security-Event-Log-lookup](https://github.com/ztothez/Windows-Security-Event-Log-lookup)
