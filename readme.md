@@ -39,3 +39,9 @@ Windows Security Event ID Lookup is an open-source browser extension for quickly
 This project is licensed under the MIT License.
 Source code:
 [https://github.com/ztothez/Windows-Security-Event-Log-lookup](https://github.com/ztothez/Windows-Security-Event-Log-lookup)
+
+## Privacy Policy
+This extension does not collect, store, or track personal data.  
+For full details, see the privacy policy below.
+
+[Privacy Policy](https://ztothez.github.io/Windows-Security-Event-Log-lookup/)
