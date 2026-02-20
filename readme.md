@@ -33,7 +33,7 @@ Windows Security Event ID Lookup is an open-source browser extension for quickly
     [https://addons.mozilla.org/firefox/addon/win-event-lookup/](https://addons.mozilla.org/firefox/addon/win-event-lookup/)
 
 - **Chrome Web Store:**  
-    [https://chromewebstore.google.com/detail/abuseipdb-check/](https://chromewebstore.google.com/detail/abuseipdb-check/enifjhjkmfpdncfbdhojpjiiiimbmjbc?authuser=0&hl=en)    
+    [https://chromewebstore.google.com/detail/win-event-lookup/]([https://chromewebstore.google.com/detail/abuseipdb-check/enifjhjkmfpdncfbdhojpjiiiimbmjbc?authuser=0&hl=en](https://chromewebstore.google.com/detail/windows-event-lookup/lbphapinakgdhbbejhaegnofmdkjpmeh))    
 
 ## Open Source & License
 This project is licensed under the MIT License.
